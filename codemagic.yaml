@@ -1,5 +1,17 @@
 workflows:
-  hello-world-workflow:
-    name: Hello world workflow
+  ios-release:
+    name: iOS Release
+    environment:
+      flutter: stable
+      xcode: latest
     scripts:
-        - echo "Hello World!"
+      - name: Build IPA
+        script: flutter build ipa --release
+    artifacts:
+      - build/ios/ipa/*.ipa
+    publishing:
+      app_store_connect:
+        api_key: 
+          key_id: YCWNM795Q9
+          issuer_id: 17977e09-54b9-4a8c-bd91-5739f74989da
+          private_key: MIGTAgEAMBMGByqGSM49AgEGCCqGSM49AwEHBHkwdwIBAQQgZRzMNko2vbOWQgDw1kpIxApTlr3A1X6MJnhrVzdiyMigCgYIKoZIzj0DAQehRANCAAQnD/DakFiQbMVnpTozjOlH+nzu4zwoE4zfboC4jx26saRir7FOTtYKRp64/GRlQsPLwn11z4Leq0MwNtKLt9o7
