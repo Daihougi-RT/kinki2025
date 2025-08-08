@@ -5,7 +5,7 @@
   "packages": [
     {
       "name": "kinki",
-      "version": "1.1.0+5",
+      "version": "1.2.1",
       "dependencies": [
         "auto_size_text",
         "basic_utils",
