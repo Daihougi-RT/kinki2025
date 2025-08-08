@@ -93,26 +93,27 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-     - assets/images/cover0.jpg
-     - assets/images/cover1.png
-     - assets/images/cover2.png
-     - assets/images/cover3.png
-     - assets/images/cover4.png
-     - assets/images/cover5.png
-     - assets/images/cover6.png
-     - assets/images/home.png
-     - assets/images/home1.png
-     - assets/images/icon.png
-     - assets/images/map.jpg
-     - assets/images/iMap.png
-     - assets/images/mag.png
-     - assets/images/redu.png
-     - assets/images/return.png
-     - assets/images/return1.png
-     - assets/images/taikai.jpg
-     - assets/images/jikkou.jpg
-     - assets/images/jinendo.jpg
-     - assets/images/timetable.jpg
+    - assets/images/cover0.jpg
+    - assets/images/cover1.png
+    - assets/images/cover2.png
+    - assets/images/cover3.png
+    - assets/images/cover4.png
+    - assets/images/cover5.png
+    - assets/images/cover6.png
+    - assets/images/home.png
+    - assets/images/home1.png
+    - assets/images/icon.png
+    - assets/images/map.jpg
+    - assets/images/iMap.png
+    - assets/images/mag.png
+    - assets/images/redu.png
+    - assets/images/return.png
+    - assets/images/return1.png
+    - assets/images/taikai.jpg
+    - assets/images/jikkou.jpg
+    - assets/images/jinendo.jpg
+    - assets/images/timetable.jpg
+    - shorebird.yaml
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
