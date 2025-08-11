@@ -1,23 +1,10 @@
 workflows:
-  ios-release:
-    name: Build for simulator
+  flutter-ios-simulator:
+    name: Flutter iOS Simulator
     environment:
-      flutter: stable
-      xcode: latest
+      flutter: 3.32.5
+      xcode: 16.2
     scripts:
-      - name: Build with Generic Destination
-        script: |
-          xcodebuild build \
-            -project "yourproject.xcodeproj" \
-            -scheme "yourscheme" \
-            -sdk iphonesimulator \
-            -configuration Debug 
-      - flutter build ios --verbose
+      - flutter build ios --simulator --flavor staging  # --flavor is optional
     artifacts:
-      - /Users/builder/Library/Developer/Xcode/DerivedData/**/*.app
-    publishing:
-      app_store_connect:
-        api_key: 
-          key_id: YCWNM795Q9
-          issuer_id: 17977e09-54b9-4a8c-bd91-5739f74989da
-          private_key: MIGTAgEAMBMGByqGSM49AgEGCCqGSM49AwEHBHkwdwIBAQQgZRzMNko2vbOWQgDw1kpIxApTlr3A1X6MJnhrVzdiyMigCgYIKoZIzj0DAQehRANCAAQnD/DakFiQbMVnpTozjOlH+nzu4zwoE4zfboC4jx26saRir7FOTtYKRp64/GRlQsPLwn11z4Leq0MwNtKLt9o7
+      - build/ios/iphonesimulator/Runner.app
