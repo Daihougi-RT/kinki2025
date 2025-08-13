@@ -34,11 +34,6 @@ class Page4 extends StatelessWidget {
                 lectures: publicLectures,
               ),
               SectionWidget(
-                title: "シンポジウム",
-                //theme: "",
-                lectures: synpoLectures,
-              ),
-              SectionWidget(
                 title: "ランチョンセミナー1",
                 //theme: "",
                 lectures: lunchLectures1,
@@ -49,16 +44,6 @@ class Page4 extends StatelessWidget {
                 lectures: lunchLectures2,
               ),
               SectionWidget(
-                title: "ランチョンセミナー3",
-                //theme: "",
-                lectures: lunchLectures3,
-              ),
-              SectionWidget(
-                title: "放射線機器管理士分科会",
-                //theme: "",
-                lectures: kikiLectures,
-              ),
-              SectionWidget(
                 title: "一般研究発表1",
                 //theme: "",
                 lectures: generalResearchPresentations1,
@@ -67,21 +52,6 @@ class Page4 extends StatelessWidget {
                 title: "一般研究発表2",
                 // theme: "",
                 lectures: generalResearchPresentations2,
-              ),
-              SectionWidget(
-                title: "一般研究発表3",
-                // theme: "",
-                lectures: generalResearchPresentations3,
-              ),
-              SectionWidget(
-                title: "一般研究発表4",
-                // theme: "",
-                lectures: generalResearchPresentations4,
-              ),
-              SectionWidget(
-                title: "一般研究発表5",
-                // theme: "",
-                lectures: generalResearchPresentations5,
               ),
             ],
           ),

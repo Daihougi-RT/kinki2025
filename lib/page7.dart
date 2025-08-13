@@ -7,7 +7,7 @@ String naiyo = vote;
 Color col1 = Colors.black; //色を変数化
 Color? col2 = Colors.blue[100];
 
-final Uri _url = Uri.parse('https://script.google.com/macros/s/AKfycbwerjYTwH5DeIPv31S7NLEqCNeXv972ARDjm1zWdSJjIbXv2Wbvw4lqO0DBVeKi0vwwCg/exec');
+final Uri _url = Uri.parse('https://script.google.com/macros/s/AKfycbwomK7fEZhws3Z5fhSrvfYxMfRuPnXKitQv9_CA0am9-01rdrTsgtujb--AKfS1tK3r1g/exec');
 
 class Page7 extends StatelessWidget {
   const Page7({super.key});

@@ -1,4 +1,4 @@
-name: kinki
+name: oart
 description: "A new Flutter project."
 
 # The following line prevents the package from being accidentally published to
@@ -17,7 +17,7 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 # https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
 # In Windows, build-name is used as the major, minor, and patch parts
 # of the product and file versions while build-number is used as the build suffix.
-version: 10.2.1+212
+version: 1.0.0+2
 
 environment:
   sdk: '>=3.3.4 <4.0.0'
@@ -111,7 +111,6 @@ flutter:
     - assets/images/return1.png
     - assets/images/taikai.jpg
     - assets/images/jikkou.jpg
-    - assets/images/jinendo.jpg
     - assets/images/timetable.jpg
     - shorebird.yaml
 

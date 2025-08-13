@@ -19,7 +19,7 @@ if (flutterVersionCode == null) {
 
 def flutterVersionName = localProperties.getProperty('flutter.versionName')
 if (flutterVersionName == null) {
-    flutterVersionName = '1.1.0'
+    flutterVersionName = '1.1.1'
 }grep
 
 def keystoreProperties = new Properties()
@@ -30,7 +30,7 @@ if (keystorePropertiesFile.exists()) {
 
 android {
 
-    namespace "com.my.kinki"
+    namespace "com.my.oart"
     compileSdkVersion 35 // または安定した最新バージョン
     defaultConfig {
         //noinspection OldTargetApi
@@ -55,12 +55,12 @@ android {
 
     defaultConfig {
         // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
-        applicationId "com.my.kinki"
+        applicationId "com.my.oart"
         // You can update the following values to match your application needs.
         // For more information, see: https://docs.flutter.dev/deployment/android#reviewing-the-gradle-build-configuration.
         minSdkVersion flutter.minSdkVersion
         targetSdkVersion flutter.targetSdkVersion
-        String stringValue = "123"
+        String stringValue = "124"
         int intValue = Integer.parseInt(stringValue)
         versionCode = intValue//flutterVersionCode.toInteger()//'11' 17行目が効いている!!!
         versionName flutterVersionName

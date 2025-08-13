@@ -17,7 +17,7 @@ class Page1 extends StatelessWidget {
     double screenHeight = screenSize.height;
     //double areaHei = screenHeight -(screenWidth/960*440);
     //960*440はcover1のサイズ
-    double high = screenHeight/9-35;
+    double high = screenHeight/8-40;
     double wid = screenWidth - 50;
     //double high = 50;
     Size buttonSize = Size(wid, high);
@@ -248,7 +248,7 @@ class Page1 extends StatelessWidget {
                         count: 6,)),
                 );
               },
-              child: const Text('実行委員'),
+              child: const Text('大会役員'),
             ),
             const SizedBox(
               //単に間をあける　padding等効かない
@@ -278,34 +278,6 @@ class Page1 extends StatelessWidget {
                 );
               },
               child: const Text('予稿集掲載会社'),
-            ),
-            const SizedBox(
-              //単に間をあける　padding等効かない
-              height: 20,
-            ),
-            ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                foregroundColor: col1, backgroundColor: col2, fixedSize: buttonSize,
-                elevation: 16, //影
-                textStyle: const TextStyle(
-                  fontSize: 18.0,
-                  //fontWeight: FontWeight.bold,
-                ),
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(10),
-                ),
-              ),
-              onPressed: () {
-                //指定した画面に遷移
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    // ボタン8で遷移するページ
-                      builder: (context) => const Page1P2(
-                        count: 2,)),
-                );
-              },
-              child: const Text('次年度開催のご挨拶'),
             ),
           ],
         ),

@@ -36,7 +36,7 @@ class Page1P1 extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center, // すべて中央揃え
             children: <Widget>[
               const Text(
-                'Transformation・Innovation',
+                '「技術革新と共に歩む」',
                 style: TextStyle(
                   fontFamily: 'NotoSansJP',
                   height: 1.0, // heightプロパティを追加。 任意の値を設定して調整する
@@ -48,11 +48,11 @@ class Page1P1 extends StatelessWidget {
                 textAlign: TextAlign.center,
               ),
               const Text(
-                '～Let\'s take a new step～',
+                '～診療放射線技師としての成長と挑戦～',
                 style: TextStyle(
                   fontFamily: 'NotoSansJP',
                   height: 1.2, // heightプロパティを追加。 任意の値を設定して調整する
-                  fontSize: 22,
+                  fontSize: 20,
                   fontWeight: FontWeight.w400,
                   fontStyle: FontStyle.normal,
                   letterSpacing: 0.0075,
@@ -62,8 +62,8 @@ class Page1P1 extends StatelessWidget {
               const SizedBox(height: 10),
 
               const Text(
-                '''日 時：令和8年2月15日（日）
-              10:00～16:30
+                '''日 時：令和7年11月16日（日）
+              10:00～17:00
                9:30　会場受付開始''',
                 style: TextStyle(
                   fontFamily: 'NotoSansJP',
@@ -78,7 +78,7 @@ class Page1P1 extends StatelessWidget {
               const SizedBox(height: 10),
 
               const Text(
-                '会 場：京都テルサ\nカンファレンスルームタワーC',
+                '会 場：アートホテル大阪ベイタワー\n　　　 4階ボールルーム',
                 style: TextStyle(
                   fontFamily: 'NotoSansJP',
                   height: 1.2, // heightプロパティを追加。 任意の値を設定して調整する
@@ -109,7 +109,7 @@ class Page1P1 extends StatelessWidget {
                   style: TextStyle(
                     fontFamily: 'NotoSansJP',
                     color: Colors.black,
-                    fontSize: 20,
+                    fontSize: 18,
                     fontWeight: FontWeight.w400,
                     fontStyle: FontStyle.normal,
                     letterSpacing: 0.0075,

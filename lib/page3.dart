@@ -6,16 +6,16 @@ class Page3 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // タイムテーブル画像のピクセルサイズ
-    double imageWidth = 1000; // 横幅
-    double imageHeight = 1500; // 縦幅
+    double imageWidth = 1085; // 横幅
+    double imageHeight = 1617; // 縦幅
 
     // 時間軸の縦ピクセル範囲
-    double timeStartPixel = 113; // 9:00 の縦位置
-    double timeEndPixel = 1471; // 17:00 の縦位置
+    double timeStartPixel = 99; // 9:30 の縦位置
+    double timeEndPixel = 1584; // 17:00 の縦位置
     double timePixelRange = timeEndPixel - timeStartPixel; // 有効時間軸のピクセル範囲
 
     // 時間情報
-    int startTimeMinutes = 9 * 60; // 9:00 → 分単位（540分）
+    int startTimeMinutes = 9 * 60 + 30; // 9:30 → 分単位（570分）
     int endTimeMinutes = 17 * 60; // 17:00 → 分単位（1020分）
     int totalTimeMinutes = endTimeMinutes - startTimeMinutes; // 総時間（480分）
 
@@ -45,9 +45,12 @@ class Page3 extends StatelessWidget {
         (timeStartPixel * scale);
 
     // 赤線の横方向の位置
-    double leftPadding = 26 * scale; // 左側余白のピクセル数（スケール考慮）
+    double leftPadding = 33 * scale; // 左側余白のピクセル数（スケール考慮）
     double posLeft = leftPadding;
-    double barSize = (imageWidth - 52) * scale; // 外枠を考慮した幅
+    double barSize = (imageWidth - 66) * scale; // 外枠を考慮した幅
+
+    // 9時から17時の間のみ赤線を表示
+    bool isInTimeRange = elapsedMinutes >= 60 && elapsedMinutes <= totalTimeMinutes;
 
     return Scaffold(
       appBar: PreferredSize(
@@ -76,15 +79,16 @@ class Page3 extends StatelessWidget {
                 ),
               ),
               // 現在の時間を示す赤い線
-              Positioned(
-                top: posVertical - 2, // タブレットでのズレ補正
-                left: posLeft,
-                child: Container(
-                  width: barSize,
-                  height: 4,
-                  color: Colors.red.withValues(alpha:0.3),
-                ),
-              ),
+              if (isInTimeRange) // 9:30〜17:00 の間のみ赤線を表示
+               Positioned(
+                 top: posVertical - 2, // タブレットでのズレ補正
+                 left: posLeft,
+                 child: Container(
+                   width: barSize,
+                   height: 4,
+                   color: Colors.red.withValues(alpha:0.3),
+                 ),
+               ),
             ],
           ),
         ),

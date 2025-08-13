@@ -14,15 +14,10 @@ Map<String, Map<String, String>> extractSpeakers() {
     educationalLectures,
     specialLectures,
     publicLectures,
-    synpoLectures,
     lunchLectures1,
     lunchLectures2,
-    lunchLectures3,
     generalResearchPresentations1,
     generalResearchPresentations2,
-    generalResearchPresentations3,
-    generalResearchPresentations4,
-    generalResearchPresentations5
   ]) {
     for (var lecture in lectureData) {
       // 座長情報を個別に展開して追加

@@ -1,11 +1,11 @@
 {
   "roots": [
-    "kinki"
+    "oart"
   ],
   "packages": [
     {
-      "name": "kinki",
-      "version": "10.2.1+212",
+      "name": "oart",
+      "version": "1.0.0+2",
       "dependencies": [
         "auto_size_text",
         "basic_utils",

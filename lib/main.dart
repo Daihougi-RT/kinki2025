@@ -14,11 +14,11 @@ import 'dart:convert';
 
 final now = DateTime.now().toLocal();
 
-final kaisaiDay = DateTime(2026, 02, 15); //開始日
+final kaisaiDay = DateTime(2025, 11, 16); //開始日
 final todayDay = DateTime(now.year, now.month, now.day);
 final diffDay = kaisaiDay.difference(todayDay).inDays;
 
-final kaisaiTime = DateTime(2026, 02, 15, 10, 00); //開始日時
+final kaisaiTime = DateTime(2025, 11, 16, 10, 00); //開始日時
 final kaisaiMin = kaisaiTime.hour * 60 + kaisaiTime.minute;
 final todayMin = now.hour * 60 + now.minute;
 final diffMin = kaisaiMin - todayMin;
@@ -67,14 +67,13 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: "Kinki Conf. 2025",
+      title: "35th Oart Conf.",
       theme: ThemeData(
         fontFamily: 'NotoSansJP', // フォントファミリーを指定
         primarySwatch: Colors.blue,
         scaffoldBackgroundColor: Colors.white,
       ),
       home: const MyHomePage(title: ''),
-
     );
   }
 }
@@ -101,8 +100,8 @@ class MyHomePageState extends State<MyHomePage> {
     Size screenSize = MediaQuery.of(context).size; //画面サイズ取得
     double screenWidth = screenSize.width;
     double screenHeight = screenSize.height;
-    double areaHei = screenHeight -(screenWidth/794*419);
-    //794*419はcover0のサイズ
+    double areaHei = screenHeight -(screenWidth/945*605);
+    //945*605はcover0のサイズ
     double imgHei = areaHei/3-underArea;
     double imgWid = screenWidth/2-70;
     double high = 30;  // 説明文の高さ
@@ -118,7 +117,7 @@ class MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
         centerTitle: true,
       ),
-      backgroundColor: const Color(0xFFB388DF), //背景色
+      backgroundColor: const Color(0xFFC3F9FF), //背景色
       extendBodyBehindAppBar: true,
 
       body: Center(
@@ -558,7 +557,7 @@ class MyHomePageState extends State<MyHomePage> {
 }
 
 class VersionCheck {
-  static const String versionCheckUrl = "https://kinki2024-5a199.web.app/latest-version.json";
+  static const String versionCheckUrl = "https://oart2025-5a199.web.app/latest-version.json";
 
   static Future<void> checkVersion(BuildContext context) async {
     try {
@@ -602,7 +601,7 @@ class VersionCheck {
       builder: (context) {
         return AlertDialog(
           title: const Text('アップデートのお知らせ'),
-          content: Text('新しいバージョン ($latestVersion) が利用可能です。kinki2025を検索して更新してください。'),
+          content: Text('新しいバージョン ($latestVersion) が利用可能です。oart2025を検索して更新してください。'),
         );
       },
     );

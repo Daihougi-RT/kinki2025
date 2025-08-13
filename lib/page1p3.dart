@@ -82,7 +82,6 @@ class Page1P3 extends StatelessWidget {
     );
   }
 
-
   List<TextSpan> _parseContent(String content) {
     final List<TextSpan> spans = [];
     final RegExp urlRegExp =

@@ -105,7 +105,7 @@ class Page2P1 extends StatelessWidget {
       body: FlutterMap(
         // マップ表示設定
         options: const MapOptions(
-          initialCenter: LatLng(34.97764479197525, 135.75597405383252),//(34.6696, 135.4610),
+          initialCenter: LatLng(34.66976559704894, 135.46097436441),//(34.6696, 135.4610),
           initialZoom: 16.0,
         ),
         children: [
@@ -127,7 +127,7 @@ class Page2P1 extends StatelessWidget {
                 //borderColor:
                 //    const Color.fromARGB(255, 23, 6, 253).withOpacity(0.9),
                 // borderStrokeWidth: 2,
-                point: const LatLng(34.6696, 135.4610),
+                point: const LatLng(34.6697, 135.4609),
               ),
               CircleMarker(
                 color: const Color.fromARGB(255, 3, 19, 248).withValues(alpha: 0.9),

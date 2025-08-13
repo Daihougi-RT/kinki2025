@@ -17,19 +17,19 @@ class Page1P2 extends StatelessWidget {
     //double high = 50;
     if (count == 0) {
       title1 = "大会長挨拶";
-      title2 = "学術大会開催にあたって\n大会長　久保田裕一";
+      title2 = "学術大会開催にあたって\n大会長　藤田秀樹";
       photo = "assets/images/taikai.jpg";
       naiyo = kaicho;
     } else if(count == 1){
       title1 = "実行委員長挨拶";
-      title2 = "学術大会開催にあたり\n実行委員長　京都太郎";
+      title2 = "学術大会開催にあたり\n実行委員長　奥中雄策";
       photo = "assets/images/jikkou.jpg";
       naiyo = okunaka;
     } else{
     title1 = "次年度開催のご挨拶";
     title2 = "令和8年度 近畿地域診療放射線技師会\n学術大会に向けて\n兵庫県診療放射線技師会\n会長 半蔀　英敏";
-    photo = "assets/images/jinendo.jpg";
-    naiyo = kubota;
+    photo = "assets/images/taikai.jpg";
+    naiyo = kaicho;
     }
 
     return Scaffold(
