@@ -49,6 +49,9 @@ class Page3 extends StatelessWidget {
     double posLeft = leftPadding;
     double barSize = (imageWidth - 52) * scale; // 外枠を考慮した幅
 
+    // 9時から17時の間のみ赤線を表示
+    bool isInTimeRange = elapsedMinutes >= 0 && elapsedMinutes <= totalTimeMinutes;
+
     return Scaffold(
       appBar: PreferredSize(
         preferredSize: Size.fromHeight(appbarHeight),
@@ -76,15 +79,16 @@ class Page3 extends StatelessWidget {
                 ),
               ),
               // 現在の時間を示す赤い線
-              Positioned(
-                top: posVertical - 2, // タブレットでのズレ補正
-                left: posLeft,
-                child: Container(
-                  width: barSize,
-                  height: 4,
-                  color: Colors.red.withValues(alpha:0.3),
+              if (isInTimeRange) // 9:30〜17:00 の間のみ赤線を表示
+                Positioned(
+                  top: posVertical - 2, // タブレットでのズレ補正
+                 left: posLeft,
+                  child: Container(
+                    width: barSize,
+                    height: 4,
+                    color: Colors.red.withValues(alpha:0.3),
+                  ),
                 ),
-              ),
             ],
           ),
         ),

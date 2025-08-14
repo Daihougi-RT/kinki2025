@@ -26,7 +26,7 @@ const underArea = 70;
 
 String hyouJi() {
   if (diffDay > 0) {
-    return '開催まであと$diffDay日';
+    return '開催まであﾂと$diffDay日';
   } else if (diffDay < -1) {
     return 'ご参加いただきありがとうございました';
   } else if (diffMin > 60) {
