@@ -40,7 +40,7 @@ class Page1P1 extends StatelessWidget {
                 style: TextStyle(
                   fontFamily: 'NotoSansJP',
                   height: 1.0, // heightプロパティを追加。 任意の値を設定して調整する
-                  fontSize: 25,
+                  fontSize: 23,
                   fontWeight: FontWeight.w400,
                   fontStyle: FontStyle.normal,
                   letterSpacing: 0.0075,
@@ -52,7 +52,7 @@ class Page1P1 extends StatelessWidget {
                 style: TextStyle(
                   fontFamily: 'NotoSansJP',
                   height: 1.2, // heightプロパティを追加。 任意の値を設定して調整する
-                  fontSize: 22,
+                  fontSize: 20,
                   fontWeight: FontWeight.w400,
                   fontStyle: FontStyle.normal,
                   letterSpacing: 0.0075,
@@ -68,7 +68,7 @@ class Page1P1 extends StatelessWidget {
                 style: TextStyle(
                   fontFamily: 'NotoSansJP',
                   height: 1.2, // heightプロパティを追加。 任意の値を設定して調整する
-                  fontSize: 20,
+                  fontSize: 18,
                   fontWeight: FontWeight.w400,
                   fontStyle: FontStyle.normal,
                   letterSpacing: 0.0075,
@@ -82,7 +82,7 @@ class Page1P1 extends StatelessWidget {
                 style: TextStyle(
                   fontFamily: 'NotoSansJP',
                   height: 1.2, // heightプロパティを追加。 任意の値を設定して調整する
-                  fontSize: 20,
+                  fontSize: 18,
                   fontWeight: FontWeight.w400,
                   fontStyle: FontStyle.normal,
                   letterSpacing: 0.0075,
@@ -109,7 +109,7 @@ class Page1P1 extends StatelessWidget {
                   style: TextStyle(
                     fontFamily: 'NotoSansJP',
                     color: Colors.black,
-                    fontSize: 20,
+                    fontSize: 18,
                     fontWeight: FontWeight.w400,
                     fontStyle: FontStyle.normal,
                     letterSpacing: 0.0075,

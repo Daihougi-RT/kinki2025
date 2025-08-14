@@ -57,7 +57,7 @@ class Page7 extends StatelessWidget {
                   fontFamily: 'NotoSansJP',
                 //color: Color(0xffffffff),
                   height: 1.6, // heightプロパティを追加。 任意の値を設定して調整する
-                  fontSize: 20,
+                  fontSize: 18,
                   fontWeight: FontWeight.bold,
                   fontStyle: FontStyle.normal,
                   //decoration: TextDecoration.underline,
@@ -71,7 +71,7 @@ class Page7 extends StatelessWidget {
                 style: const TextStyle(
                   fontFamily: 'SFProDisplay',
                   height: 1.4, // heightプロパティを追加。 任意の値を設定して調整する
-                  fontSize: 20,
+                  fontSize: 16,
                   fontWeight: FontWeight.w400,
                   fontStyle: FontStyle.normal,
                   letterSpacing: 0.01,
@@ -106,7 +106,7 @@ class Page7 extends StatelessWidget {
                   foregroundColor: col1, backgroundColor: col2, minimumSize: buttonSize,
                   elevation: 16, //影
                   textStyle: const TextStyle(
-                    fontSize: 22.0,
+                    fontSize: 20.0,
                     //fontWeight: FontWeight.bold,
                   ),
                   shape: RoundedRectangleBorder(
