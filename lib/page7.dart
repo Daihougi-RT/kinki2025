@@ -69,7 +69,7 @@ class Page7 extends StatelessWidget {
               Text(
                 naiyo,
                 style: const TextStyle(
-                  fontFamily: 'SFProDisplay',
+                  fontFamily: 'NotoSansJP', //SFProDisplay',
                   height: 1.4, // heightプロパティを追加。 任意の値を設定して調整する
                   fontSize: 16,
                   fontWeight: FontWeight.w400,

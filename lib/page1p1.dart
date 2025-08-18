@@ -109,7 +109,7 @@ class Page1P1 extends StatelessWidget {
                   style: TextStyle(
                     fontFamily: 'NotoSansJP',
                     color: Colors.black,
-                    fontSize: 18,
+                    fontSize: 16,
                     fontWeight: FontWeight.w400,
                     fontStyle: FontStyle.normal,
                     letterSpacing: 0.0075,

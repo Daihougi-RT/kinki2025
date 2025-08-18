@@ -67,7 +67,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: "Kinki Conf. 2025",
+      title: "Kinki Conf.2025",
       theme: ThemeData(
         fontFamily: 'NotoSansJP', // フォントファミリーを指定
         primarySwatch: Colors.blue,
