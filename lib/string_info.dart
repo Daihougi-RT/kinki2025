@@ -79,7 +79,7 @@ const Map<int, Map<String, String>> pageTexts = {
   6: {
     "title": "実行委員",
     "content": """
-大会長　　　会　長　　　久保田裕一
+大会長　　　会　長　　久保田裕一
 実行委員長　常務理事　奥中 雄策
 　　　　　　副会長　　檀上 輝
 　　　　　　副会長　　佐原 朋広

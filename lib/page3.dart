@@ -82,7 +82,7 @@ class Page3 extends StatelessWidget {
               if (isInTimeRange) // 9:30〜17:00 の間のみ赤線を表示
                 Positioned(
                   top: posVertical - 2, // タブレットでのズレ補正
-                 left: posLeft,
+                  left: posLeft,
                   child: Container(
                     width: barSize,
                     height: 4,

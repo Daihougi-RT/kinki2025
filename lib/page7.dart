@@ -50,7 +50,7 @@ class Page7 extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
               Container(
-                height: 30,
+                height: 35,
                 alignment: Alignment.center,
                 child: const Text("投票はWebからのみ行います",
                   style:TextStyle(
@@ -66,17 +66,20 @@ class Page7 extends StatelessWidget {
                   textAlign: TextAlign.center,
                 ),
               ),
-              Text(
-                naiyo,
-                style: const TextStyle(
-                  fontFamily: 'NotoSansJP', //SFProDisplay',
-                  height: 1.4, // heightプロパティを追加。 任意の値を設定して調整する
-                  fontSize: 16,
-                  fontWeight: FontWeight.w400,
-                  fontStyle: FontStyle.normal,
-                  letterSpacing: 0.01,
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 10.0), // 左右にパディングを追加
+                child: Text(
+                  naiyo,
+                  style: const TextStyle(
+                    fontFamily: 'NotoSansJP',
+                    height: 1.4, // heightプロパティを追加。 任意の値を設定して調整する
+                    fontSize: 18,
+                    fontWeight: FontWeight.w400,
+                    fontStyle: FontStyle.normal,
+                    letterSpacing: 0.01,
+                  ),
+                  textAlign: TextAlign.left,
                 ),
-                textAlign: TextAlign.left,
               ),
             ],
           ),
@@ -121,7 +124,7 @@ class Page7 extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: <Widget>[
               Container(
-                padding: const EdgeInsets.only(bottom: 20.0),
+                padding: const EdgeInsets.only(bottom: 70.0),
               ),
             ],
           ),
