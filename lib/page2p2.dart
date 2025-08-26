@@ -77,8 +77,8 @@ class Page2P2 extends StatelessWidget {
                 radius: 5,
                 //borderColor:
                 //    const Color.fromARGB(255, 23, 6, 253).withOpacity(0.9),
-                // borderStrokeWidth: 2,
-                point: const LatLng(34.6696, 135.4610),
+                // borderStrokeWidth: 2,  34.97754809137979, 135.75616717350582
+                point: const LatLng(34.9775, 135.7561),
               ),
               CircleMarker(
                 color: const Color.fromARGB(255, 3, 19, 248).withValues(alpha: 0.9),
