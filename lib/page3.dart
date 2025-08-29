@@ -15,9 +15,9 @@ class Page3 extends StatelessWidget {
     double timePixelRange = timeEndPixel - timeStartPixel; // 1486px - 99px
 
     // 時間情報
-    int startTimeMinutes = 9 * 60;  // 540分（9:00）
-    int endTimeMinutes = 17 * 60;        // 1020分（17:00）
-    int totalTimeMinutes = endTimeMinutes - startTimeMinutes; // 450分
+    int startTimeMinutes = 9 * 60; // 540
+    int endTimeMinutes = 17 * 60;       // 1020
+    int totalTimeMinutes = endTimeMinutes - startTimeMinutes; // 450
 
     // 現在時刻
     var now = DateTime.now();
@@ -25,7 +25,8 @@ class Page3 extends StatelessWidget {
     int elapsedMinutes = currentMinutes - startTimeMinutes;
 
     // 赤線を表示するかどうか
-    bool isInTimeRange = elapsedMinutes >= 0 && elapsedMinutes <= totalTimeMinutes;
+    bool isInTimeRange =
+        elapsedMinutes >= 0 && elapsedMinutes <= totalTimeMinutes;
 
     double appbarHeight = 50;
 
@@ -37,69 +38,70 @@ class Page3 extends StatelessWidget {
           centerTitle: true,
         ),
       ),
-      body: LayoutBuilder(
-        builder: (context, constraints) {
-          // 表示可能領域のサイズ
-          double displayWidth = constraints.maxWidth;
-          double displayHeight = constraints.maxHeight;
+      body: InteractiveViewer(
+        minScale: 1.0,
+        maxScale: 3.0,
+        child: Center(
+          child: LayoutBuilder(
+            builder: (context, constraints) {
+              double displayWidth = constraints.maxWidth;
+              double displayHeight = constraints.maxHeight;
 
-          // 画像のアスペクト比
-          double imageAspect = imageWidth / imageHeight;
-          double displayAspect = displayWidth / displayHeight;
+              double imageAspect = imageWidth / imageHeight;
+              double displayAspect = displayWidth / displayHeight;
 
-          // 実際に表示される画像サイズ（BoxFit.contain と同じ計算）
-          double scaledWidth, scaledHeight;
-          if (displayAspect > imageAspect) {
-            // 横長 → 高さ基準
-            scaledHeight = displayHeight;
-            scaledWidth = imageAspect * scaledHeight;
-          } else {
-            // 縦長 → 幅基準
-            scaledWidth = displayWidth;
-            scaledHeight = scaledWidth / imageAspect;
-          }
+              double scaledWidth, scaledHeight;
+              if (displayAspect > imageAspect) {
+                scaledHeight = displayHeight;
+                scaledWidth = imageAspect * scaledHeight;
+              } else {
+                scaledWidth = displayWidth;
+                scaledHeight = scaledWidth / imageAspect;
+              }
 
-          // 上下左右余白
-          double verticalPadding = (displayHeight - scaledHeight) / 2;
-          double horizontalPadding = (displayWidth - scaledWidth) / 2;
+              double verticalPadding = (displayHeight - scaledHeight) / 2;
+              double horizontalPadding = (displayWidth - scaledWidth) / 2;
 
-          // 赤線の縦位置（スケーリング後座標）
-          double posVertical = verticalPadding +
-              (timeStartPixel / imageHeight * scaledHeight) +
-              (elapsedMinutes / totalTimeMinutes) *
-                  (timePixelRange / imageHeight * scaledHeight);
+              // 赤線の縦位置
+              double posVertical = verticalPadding +
+                  (timeStartPixel / imageHeight * scaledHeight) +
+                  (elapsedMinutes / totalTimeMinutes) *
+                      (timePixelRange / imageHeight * scaledHeight);
 
-          // 赤線の横方向
-          double leftPadding = horizontalPadding + 20 / imageWidth * scaledWidth;
-          double barSize = scaledWidth - 40 / imageWidth * scaledWidth;
+              // 赤線の横位置
+              double leftPadding =
+                  horizontalPadding + 20 / imageWidth * scaledWidth;
+              double barSize = scaledWidth - 40 / imageWidth * scaledWidth;
 
-          return Stack(
-            children: [
-              // タイムテーブル画像
-              Center(
-                child: FittedBox(
-                  fit: BoxFit.contain,
-                  child: Image.asset(
-                    'assets/images/timetable.jpg',
-                    width: imageWidth,
-                    height: imageHeight,
+              return Stack(
+                children: [
+                  // タイムテーブル画像
+                  Center(
+                    child: FittedBox(
+                      fit: BoxFit.contain,
+                      child: Image.asset(
+                        'assets/images/timetable.jpg',
+                        width: imageWidth,
+                        height: imageHeight,
+                      ),
+                    ),
                   ),
-                ),
-              ),
-              // 現在時刻が 9:00〜17:00 の範囲内なら赤線を表示
-              if (isInTimeRange)
-                Positioned(
-                  top: posVertical - 2,
-                  left: leftPadding,
-                  child: Container(
-                    width: barSize,
-                    height: 4,
-                    color: Colors.red.withValues(alpha:0.3),
-                  ),
-                ),
-            ],
-          );
-        },
+                  // 赤線（範囲内のみ表示）
+                  if (isInTimeRange)
+                    Positioned(
+                      top: posVertical - 2,
+                      left: leftPadding,
+                      child: Container(
+                        width: barSize,
+                        height: 4,
+                        color: Colors.red.withValues(alpha:0.3),
+                      ),
+                    ),
+                ],
+              );
+            },
+          ),
+        ),
       ),
     );
   }
