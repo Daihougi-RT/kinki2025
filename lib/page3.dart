@@ -16,7 +16,7 @@ class Page3 extends StatelessWidget {
 
     // 時間情報
     int startTimeMinutes = 9 * 60; // 540
-    int endTimeMinutes = 17 * 60;       // 1020
+    int endTimeMinutes = 17 * 60;  // 1020
     int totalTimeMinutes = endTimeMinutes - startTimeMinutes; // 450
 
     // 現在時刻
@@ -70,8 +70,8 @@ class Page3 extends StatelessWidget {
 
               // 赤線の横位置
               double leftPadding =
-                  horizontalPadding + 20 / imageWidth * scaledWidth;
-              double barSize = scaledWidth - 40 / imageWidth * scaledWidth;
+                  horizontalPadding + 21 / imageWidth * scaledWidth;
+              double barSize = scaledWidth - 42 / imageWidth * scaledWidth;
 
               return Stack(
                 children: [
