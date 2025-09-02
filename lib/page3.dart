@@ -70,8 +70,8 @@ class Page3 extends StatelessWidget {
 
               // 赤線の横位置
               double leftPadding =
-                  horizontalPadding + 21 / imageWidth * scaledWidth;
-              double barSize = scaledWidth - 42 / imageWidth * scaledWidth;
+                  horizontalPadding + 27 / imageWidth * scaledWidth;
+              double barSize = scaledWidth - 54 / imageWidth * scaledWidth;
 
               return Stack(
                 children: [

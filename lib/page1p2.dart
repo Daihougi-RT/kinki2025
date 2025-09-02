@@ -24,12 +24,12 @@ class Page1P2 extends StatelessWidget {
       title1 = "実行委員長挨拶";
       title2 = "学術大会開催にあたり\n実行委員長　京都太郎";
       photo = "assets/images/jikkou.jpg";
-      naiyo = okunaka;
+      naiyo = jikkou;
     } else{
     title1 = "次年度開催のご挨拶";
     title2 = "令和8年度 近畿地域診療放射線技師会\n学術大会に向けて\n兵庫県診療放射線技師会\n会長 半蔀　英敏";
     photo = "assets/images/jinendo.jpg";
-    naiyo = kubota;
+    naiyo = jinendo;
     }
 
     return Scaffold(

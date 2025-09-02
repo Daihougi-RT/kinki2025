@@ -55,9 +55,9 @@ const List<Map<String,  dynamic>> specialLectures = [
 "id": "educational_2", // セッションID
 "title": "特別講演",
 "sessionType": "司会", // このセッションでは司会と表示
-"moderator":["実行委員長　奥中 雄策"],
-  "moderator-j":["奥中 雄策"],
-  "moderator-e":["OKUNAKA YUSAKU"],
+"moderator":["実行委員長　京都　太郎"],
+  "moderator-j":["京都　太郎"],
+  "moderator-e":["KYOTO TARO"],
 "presentations": [
 {
 "speaker": [
@@ -83,36 +83,18 @@ const List<Map<String,  dynamic>> specialLectures = [
 		　　（令和4年度 大阪公立大学医学部附属病院へ名称変更、同職）
 
 ・学術等
-全国公立大学病院放射線業務連絡協議会 代表
-全国国立大学法人放射線診療部門会議 陪席委員
-日本血管撮影・インターベンション専門診療放射線技師認定機構（JAPIR） 理事長
-日本放射線技術学会（JSRT） 副代表理事
-日本放射線技術学会（JSRT） JART・JSRT協力体制推進特別委員会 委員長
-日本ラジオロジー協会（JRC） 理事
 医療放射線防護連絡協議会 理事
 医用画像情報学会・MII 理事
 全国循環器撮影研究会 会長
 関西IVR撮影技術研究会 会長
 日本IVR学会 メディカルスタッフ委員会 委員
 
-日本IVR学会 コメディカル委員会 委員（平成20～24年）
-日本IVR学会 将来計画委員会 委員（平成25,26年）
-日本IVR学会 IVR手技施行に関する診療体制のガイドライン作成委員（平成27～29年）
 日本IVR学会 IVR手技施行に関する診療体制のガイドライン評価委員（平成27～29年）
 日本診療放射線技師会（JART） 読影促進委員会 委員（平成22,23年）
 日本診療放射線技師会（JART） 読影の補助分科会 委員（平成24～令和3年）
 日本診療放射線技師会（JART） STAT画像報告分科会 委員（平成3～4年）
 
 ・業績等
-昭和61年～平成18年、大阪市長賞 受賞23回（優秀賞4回、優良賞3回、奨励賞16回）
-平成13年  第30回日本IVR学会総会 シンポジウム シンポジスト
-平成14年  JMCP（現JRC）2002 合同シンポジウム（主幹JRS）シンポジスト
-平成19年　大阪市カイゼン甲子園 最優秀技術賞受賞
-平成19年　大阪市カイゼン甲子園 グランプリ受賞
-平成19年　全国都市改善改革実践事例発表会 最優秀賞受賞（全国大会）
-平成22年  第39回日本IVR学会総会 シンポジウム シンポジスト
-平成22年　日本脳神経血管内治療学会学術大会展示賞 コメディカル金賞受賞
-平成25年　大阪市立大学医学部 優秀論文表彰へのノミネート（日本冠疾患学会掲載論文）
 平成26年  JRC2014 第70回日本放射線技術学会総会学術大会 実行委員長
 平成27年　日本放射線技術学会叢書34 刊行 責任者
 平成27年　Korean Society of Cardio Vascular Interventional Technology　Chairman`s Award 受賞
@@ -137,9 +119,9 @@ const List<Map<String,  dynamic>> publicLectures = [
 "id": "educational_3", // セッションID
 "title": "府民公開講座",
 "sessionType": "司会", // このセッションでは司会と表示
-"moderator":["OART副会長　佐原　朋広"],
-  "moderator-j": ["佐原　朋広"],
-  "moderator-e": ["SAHARA TOMOHIRO"],
+"moderator":["KART副会長　京都　二郎"],
+  "moderator-j": ["京都　二郎"],
+  "moderator-e": ["KYOTO JIRO"],
 "presentations": [
 {
 "speaker": [
