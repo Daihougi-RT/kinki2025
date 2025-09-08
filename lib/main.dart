@@ -558,7 +558,7 @@ class MyHomePageState extends State<MyHomePage> {
 }
 
 class VersionCheck {
-  static const String versionCheckUrl = "https://kinki2024-5a199.web.app/latest-version.json";
+  static const String versionCheckUrl = "https://oart2025-8bc89.web.app/latest-version.json";
 
   static Future<void> checkVersion(BuildContext context) async {
     try {
@@ -572,13 +572,16 @@ class VersionCheck {
         final data = json.decode(response.body);
         final latestVersion = data['latest_version'];
 
+        // 非同期処理後にウィジェットがまだ存在するか確認
+        if (!context.mounted) return;
+
         // バージョンを比較
         if (_isVersionOutdated(currentVersion, latestVersion)) {
           _showUpdateDialog(context, latestVersion);
         }
       }
     } catch (e) {
-      print("バージョンチェック中にエラーが発生しました: $e");
+      debugPrint("バージョンチェック中にエラーが発生しました: $e");
     }
   }
 

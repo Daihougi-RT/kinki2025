@@ -11,12 +11,12 @@ class Page3 extends StatelessWidget {
 
     // 時間軸の縦ピクセル範囲（画像座標）
     double timeStartPixel = 112;   // 9:00 の位置
-    double timeEndPixel = 1470;   // 17:00 の位置
+    double timeEndPixel  = 1470;   // 17:00 の位置
     double timePixelRange = timeEndPixel - timeStartPixel; // 1486px - 99px
 
     // 時間情報
     int startTimeMinutes = 9 * 60; // 540
-    int endTimeMinutes = 17 * 60;  // 1020
+    int endTimeMinutes  = 17 * 60; // 1020
     int totalTimeMinutes = endTimeMinutes - startTimeMinutes; // 450
 
     // 現在時刻

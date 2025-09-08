@@ -22,12 +22,12 @@ class Page1P2 extends StatelessWidget {
       naiyo = kaicho;
     } else if(count == 1){
       title1 = "実行委員長挨拶";
-      title2 = "学術大会開催にあたり\n実行委員長　京都太郎";
+      title2 = "学術大会開催にあたり\n実行委員長　中川政幸";
       photo = "assets/images/jikkou.jpg";
       naiyo = jikkou;
     } else{
     title1 = "次年度開催のご挨拶";
-    title2 = "令和8年度 近畿地域診療放射線技師会\n学術大会に向けて\n兵庫県診療放射線技師会\n会長 半蔀　英敏";
+    title2 = "令和8年度 近畿地域診療放射線技師会\n合同学術大会に向けて\n日本診療放射線技師会\n近畿地域理事 後藤吉弘";
     photo = "assets/images/jinendo.jpg";
     naiyo = jinendo;
     }
